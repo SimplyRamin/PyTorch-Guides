@@ -6,3 +6,12 @@ data/MNIST/raw/train-images-idx3-ubyte
 data/MNIST/raw/train-images-idx3-ubyte.gz
 data/MNIST/raw/train-labels-idx1-ubyte
 data/MNIST/raw/train-labels-idx1-ubyte.gz
+data/CIFAR-10/cifar-10-batches-py/batches.meta
+data/CIFAR-10/cifar-10-batches-py/data_batch_1
+data/CIFAR-10/cifar-10-batches-py/data_batch_2
+data/CIFAR-10/cifar-10-batches-py/data_batch_3
+data/CIFAR-10/cifar-10-batches-py/data_batch_4
+data/CIFAR-10/cifar-10-batches-py/data_batch_5
+data/CIFAR-10/cifar-10-batches-py/readme.html
+data/CIFAR-10/cifar-10-batches-py/test_batch
+data/CIFAR-10/cifar-10-python.tar.gz
