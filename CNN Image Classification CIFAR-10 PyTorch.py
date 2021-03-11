@@ -79,7 +79,7 @@ class ConvNet(nn.Module):
 
 model = ConvNet().to(device)
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
 n_total_steps = len(train_loader)
 for epoch in range(n_epochs):
