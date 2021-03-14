@@ -14,6 +14,8 @@ class Model(nn.Module):
 
 model = Model(n_input_features=6)
 # Here we train the model 
+# ...
+
 learning_rate = .01
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 print(f'Model State Dictionary: {model.state_dict()}')
@@ -25,5 +27,15 @@ checkpoint = {
     'optim_state': optimizer.state_dict()
 }
 
-# Saving
+# Saving Checkpoint
 torch.save(checkpoint, 'PyTorch Guides/checkpoint_state.pth')
+
+# Loading Checkpoint
+loaded_checkpoint = torch.load('PyTorch Guides/checkpoint_state.pth')
+epoch = loaded_checkpoint['epoch']
+
+model = Model(n_input_features=6)
+optimzer = torch.optim.SGD(model.parameter(), lr=0)
+
+model.load_state_dict(checkpoint['model_state'])
+optimzer.load_state_dict(checkppoint['optim_state'])
